@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ed0754">
+  <title>G-DRAGON — POWER / Interactive Portrait</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="experience" id="experience">
+  <div class="background-layer background-base" aria-hidden="true"></div>
+  <div class="background-layer background-ghost" aria-hidden="true"></div>
+  <div class="background-tint" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scanline" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="wordmark" href="#" aria-label="G-Dragon Power home">GD<span>®</span></a>
+    <p class="top-label">VISUAL STUDY <i></i> NO. 001</p>
+    <div class="topbar-actions">
+      <button class="music-button" id="musicButton" type="button" aria-pressed="false" aria-label="Play background music">♫ <span>PLAY MUSIC</span></button>
+      <button class="reset-button" id="resetButton" type="button">RESET VIEW <span>↺</span></button>
+    </div>
+  </header>
+
+  <section class="artist-copy" aria-label="Artist information">
+    <p class="overline">THE ARTIST SERIES / 001</p>
+    <h1>G-DRAGON</h1>
+    <p class="track-title">POWER</p>
+    <div class="short-rule"></div>
+    <p class="description">ONE FACE.<br><em>INFINITE</em> PERSPECTIVES.</p>
+    <p class="small-note">MOVE THE LENS TO ALTER THE IMAGE.</p>
+  </section>
+
+  <div class="lens" id="lens" role="group" aria-label="Interactive visual lens">
+    <div class="lens-image lens-image-under" aria-hidden="true"></div>
+    <div class="lens-image lens-image-over" aria-hidden="true"></div>
+    <div class="lens-grid" aria-hidden="true"></div>
+    <div class="lens-caption"><span id="modeNumber">01</span><span id="modeName">MONOCHROME</span></div>
+    <button class="lens-handle" id="lensHandle" type="button" aria-label="Drag lens to explore visual treatments" aria-describedby="lensHelp">
+      <span class="crosshair" aria-hidden="true"></span>
+    </button>
+    <span class="lens-corner tl" aria-hidden="true"></span><span class="lens-corner tr" aria-hidden="true"></span>
+    <span class="lens-corner bl" aria-hidden="true"></span><span class="lens-corner br" aria-hidden="true"></span>
+  </div>
+
+  <div class="instruction" id="lensHelp"><span class="instruction-dot"></span><span>DRAG THE SQUARE<br>TO CHANGE THE VIEW</span><span class="instruction-arrow">↗</span></div>
+  <div class="status-readout" aria-live="polite"><span id="xValue">X 68</span><span id="yValue">Y 22</span><span id="modeReadout">MODE 01 / 05</span></div>
+
+  <div class="side-label side-left" aria-hidden="true">KWON JI-YONG · VISUAL ARCHIVE</div>
+  <div class="side-label side-right" aria-hidden="true">SEOUL / WORLDWIDE</div>
+
+  <footer class="footer">
+    <span>POWER — VISUAL EXPERIENCE</span>
+    <span class="footer-center"><b></b> DRAG / TOUCH / EXPLORE</span>
+    <span>2026</span>
+  </footer>
+</main>
+<audio id="siteMusic" src="assets/background-music.mp3" loop preload="auto"></audio>
+<script src="script.js"></script>
+</body>
+</html>
